@@ -1,0 +1,30 @@
+# ===== Node.js and Express Server Ignore List =====
+
+# Node modules (contains all installed packages)
+node_modules/
+
+# Environment variables (secrets like MONGO_URI and JWT_SECRET)
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs
+*.log
+
+# Build output (if you ever build or transpile your backend)
+dist/
+build/
+
+# Uploaded files (if you store images locally)
+uploads/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files and caches
+*.tmp
+.cache/
