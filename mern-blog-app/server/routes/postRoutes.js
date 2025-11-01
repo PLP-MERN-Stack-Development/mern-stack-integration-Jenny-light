@@ -1,17 +1,18 @@
-const express = require('express');
-const router = express.Router();
-const { body } = require('express-validator');
-const multer = require('multer');
-const path = require('path');
-const {
+import express from 'express';
+import { body } from 'express-validator';
+import multer from 'multer';
+import path from 'path';
+import {
   getAllPosts,
   getPostById,
   createPost,
   updatePost,
   deletePost
-} = require('../controllers/postController');
-const { protect, admin } = require('../middleware/auth');
-const validate = require('../middleware/validation');
+} from '../controllers/postController.js';
+import { protect, admin } from '../middleware/auth.js';
+import validate from '../middleware/validation.js';
+
+const router = express.Router();
 
 // Configure multer for file uploads
 const storage = multer.diskStorage({
@@ -50,6 +51,13 @@ router.get('/', getAllPosts);
 router.get('/:id', getPostById);
 router.post('/', protect, upload.single('featuredImage'), postValidation, validate, createPost);
 router.put('/:id', protect, upload.single('featuredImage'), postValidation, validate, updatePost);
-router.delete('/:id', protect, deletePost);
+router.delete('/:id', protect, deletePost); 
+ try {
+    const posts = await Post.find();
+    res.status(200).json(posts);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Server error while fetching posts' });
+  }
 
-module.exports = router;
+export default router;
