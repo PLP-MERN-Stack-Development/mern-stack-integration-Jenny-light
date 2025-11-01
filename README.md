@@ -64,7 +64,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/mern-blog-app.git
+git clone https://github.com/PLP-MERN-Stack-Development/mern-stack-integration-Jenny-light.git
 cd mern-blog-app
 ```
 
