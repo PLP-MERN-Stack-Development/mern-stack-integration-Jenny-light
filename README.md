@@ -352,17 +352,16 @@ Jennifer Omoregie
 ## 📸 Screenshots
 
 ### Homepage
-![Homepage](screenshots/homepage.png)
+<img width="1729" height="277" alt="Screenshot 2025-11-01 061650" src="https://github.com/user-attachments/assets/c6a4304b-c5f5-4803-aed1-a676a474dbac" />
 
-### Post Detail
-![Post Detail](<img width="1729" height="277" alt="Screenshot 2025-11-01 061650" src="https://github.com/user-attachments/assets/c0eb47be-5b38-4be7-83ab-095450af8b74" />
-)
 
-### Create Post
-![Create Post](screenshots/create-post.png)
+### Loginpage
+<img width="1576" height="509" alt="Screenshot 2025-11-01 061625" src="https://github.com/user-attachments/assets/e89e79ff-6cba-41bb-bc95-310b067f70af" />
 
-### Login
-![Login](screenshots/login.png)
+### Register page
+<img width="1624" height="680" alt="Screenshot 2025-11-01 061539" src="https://github.com/user-attachments/assets/b713b698-8955-475d-8980-846a91b96542" />
+
+
 
 ---
 
